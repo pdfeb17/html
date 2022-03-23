@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prinner{
+            width: 1000px;
+            height: 500px;
+            margin: 200px auto;
+            display: flex;
+            align-items: center;
+        }
+        .prinner div{
+            margin-right: 100px;
+        }
+        .prinner div:nth-child(1){
+            width: 80px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: red;
+            animation-name: move1;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        .prinner div:nth-child(2){
+            width: 80px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: blue;
+            animation-name: move2;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        .prinner div:nth-child(3){
+            width: 80px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: green;
+            animation-name: move3;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        .prinner div:nth-child(4){
+            width: 80px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: yellow;
+            animation-name: move4;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        .prinner div:nth-child(5){
+            width: 80px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: purple;
+            animation-name: move5;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes move1{
+            0% {transform: translateX(0px);}
+            50% {transform: translateX(360px);}
+            100% {transform: translateX(720px);}
+        }
+        @keyframes move2{
+            0% {transform: translateX(0px) translateY(0px) rotate(0deg);}
+            12.5% {transform: translateX(-90px) translateY(-200px) rotate(-90deg)  scaleY(0.8);}
+            25%,100% {transform: translateX(-180px) translateY(0px) rotate(-180deg);}
+        }
+        @keyframes move3{
+            0%,25%{transform: translateX(0px) translateY(0px) rotate(0deg);}
+            37.5% {transform: translateX(-90px) translateY(-160px) rotate(-90deg)  scaleY(0.8);}
+            50%,100% {transform: translateX(-180px) translateY(0px) rotate(-180deg);}
+        }
+        @keyframes move4{
+            0%,50%{transform: translateX(0px) translateY(0px) rotate(0deg);}
+            62.5% {transform: translateX(-90px) translateY(-160px) rotate(-90deg)  scaleY(0.8);}
+            75%,100% {transform: translateX(-180px) translateY(0px) rotate(-180deg);}
+        }
+        @keyframes move5{
+            0%,75%{transform: translateX(0px) translateY(0px) rotate(0deg);}
+            87.5% {transform: translateX(-90px) translateY(-160px) rotate(-90deg)  scaleY(0.8);}
+            100% {transform: translateX(-180px) translateY(0px) rotate(-180deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="prinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
